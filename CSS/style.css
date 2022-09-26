@@ -18,7 +18,7 @@ body * {
 }
 
 .container {
-    max-width: 1438px;
+    max-width: 1440px;
     margin: 0 auto;
 }
 
@@ -52,6 +52,7 @@ body * {
 .header-navigations {
     list-style: none;
     display: flex;
+    margin: 0 0;
 }
 
 .header-navigations__items {
@@ -78,7 +79,7 @@ body * {
     font-style: normal;
     font-weight: 400;
     font-size: 40px;
-    line-height: 53px;
+    line-height: 1.325;
     text-transform: uppercase;    
 }
 
@@ -88,7 +89,7 @@ body * {
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
-    line-height: 36px;
+    line-height: 1.64;
     color: #FFFFFF;
 }
 
@@ -118,3 +119,128 @@ body * {
     bottom: 0;
     background-color: rgba(0, 0, 0, .7);
 }
+
+.hero_two {
+    background-size: cover;
+    height: 1074px;
+    position: relative;
+    background-color: #131313;
+}
+
+.hero-navigations a {
+    text-decoration: none;    
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.36;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.3);
+    list-style: none;
+    padding-right: 58.5px;
+    
+    
+}
+
+.hero_two {
+    padding-top: 107px;
+    padding-left: 134px;
+    padding-right: 134px;
+    padding-bottom: 415px;
+}
+
+.blue {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    
+}
+
+.ns {
+    justify-content: left;
+    width: 679px;
+    padding: 0 0 53px; 
+   
+}
+
+.green {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.foto {
+    height: 482px;
+    width: 680px;
+    left: 625px;
+    top: 176px;   
+
+}.comleted {
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 37px;
+    letter-spacing: -0.07em;
+    text-transform: uppercase;
+    color: #E3B873;
+    margin: 0px;
+    padding: 0 239px 34px 0;
+
+}
+
+.Only {
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 27px;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0 50px 42px 0;
+
+}
+
+.red {    
+    display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+    height: 205px;
+    
+    
+}
+
+div.block {
+    padding: 0 29px 43px 0;
+    width: 213px;
+}
+
+h3.item {
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #E3B873;
+    margin: 0;
+	
+}
+
+span.text {
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.arrows {
+    width: 205px;
+    height: 13px;
+}
+
+
+    
+
+
