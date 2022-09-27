@@ -10,14 +10,15 @@
 
 body {
     margin: 0;
-    font-family: Nunito Sans;
+    font-family: 'Nunito Sans';
 }
 
 body * {
     box-sizing: border-box;
+    text-decoration: none;
 }
 
-.container {
+.container, .ns {
     max-width: 1440px;
     margin: 0 auto;
 }
@@ -28,13 +29,48 @@ body * {
     border-radius: 2px;
     outline: 0;
     border: 0;
-    padding: 13px 33px;
+    padding: 11px 35px ;
     color: white;
     text-transform: uppercase;
     font-style: italic;
+    font-size: 11px;
+    font-family: 'Nunito Sans';
+    margin-top: 2px;
+}
+
+.button:hover, .button:active {
+    background: none; border: 1px solid #FFFFFF;
+}
+
+.cf {
+    color: #FFFFFF;
+}
+
+.cf2 {
+    color: #E3B873;
 }
 
 .logo {
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #E3B873;
+    padding-top: 5px;
+    
+}
+
+
+.telephone {
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 15px;
+    text-align: right;
+    text-decoration-line: underline;    
     color: #E3B873;
 }
 
@@ -47,30 +83,56 @@ body * {
     justify-content: space-between;
     height: 83px;
     align-items: center;
+    padding: 0 92px;
 }
 
 .header-navigations {
     list-style: none;
     display: flex;
-    margin: 0 0;
+    margin-left: 77px;   
+    padding-inline-start: 0;    
 }
 
 .header-navigations__items {
-    margin-right: 47px;
+    margin-right: 54px;
+    
+
 }
 
-.header-navigations__items a {
-    text-decoration: none;
+.header-navigations__items a {    
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 15px;
     color: white;
+    
 }
 
 .hero {
+    position: relative;
     padding-top: 194px;
     padding-left: 134px;
-    background-image: url(..//Img/hero.jpg);
-    background-size: cover;
+    background-image: url(..//Img/hero.jpg);    
     height: 707px;
-    position: relative;
+    -webkit-background-size: cover;
+            background-size: cover;
+}
+
+.hero:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .7);
+    z-index: 2;
+}
+
+.box_one {
+    position: relative;    
+    z-index: 3;  
 }
 
 .title {
@@ -80,44 +142,37 @@ body * {
     font-weight: 400;
     font-size: 40px;
     line-height: 1.325;
-    text-transform: uppercase;    
+    text-transform: uppercase;
+    width: 675px;
+    height: 105px;    
 }
 
 .title-second {
     margin: 0;
+    padding: 19px 0 21px 0;
     font-family: 'Nunito Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
     line-height: 1.64;
     color: #FFFFFF;
+    width: 505px;    
+    /* padding-bottom: 41px; */
 }
 
-.hero-container {
-    margin: 0 0;
-    margin-bottom: 19px;
-    position: relative;
-    z-index: 1;
-    width: 676px;
-    height: 105px;
+.bottons {
+    display: flex;
+    width: 434px;
+    height: 51px;
 }
 
-.hero-container__second {
-    margin: 0;
-    position: relative;
-    z-index: 1;
-    width: 505px;
-    height: 89px;
+.bt1 {
+    margin-right: 20px;
+    padding: 20px 45px 25px 45px;    
 }
 
-.hero-overlay {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, .7);
+.bt2 {
+    padding: 20px 29px 25px 29px;   
 }
 
 .hero_two {
@@ -127,8 +182,7 @@ body * {
     background-color: #131313;
 }
 
-.hero-navigations a {
-    text-decoration: none;    
+.hero-navigations a {    
     font-family: 'Yeseva One';
     font-style: normal;
     font-weight: 400;
@@ -137,44 +191,35 @@ body * {
     text-transform: uppercase;
     color: rgba(255, 255, 255, 0.3);
     list-style: none;
-    padding-right: 58.5px;
-    
-    
+    padding-right: 59px;       
 }
 
 .hero_two {
-    padding-top: 107px;
-    padding-left: 134px;
-    padding-right: 134px;
-    padding-bottom: 415px;
+    padding: 107px 134px 415px 134px;    
 }
 
 .blue {
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    
+    flex-direction: column;    
 }
 
 .ns {
-    justify-content: left;
-    width: 679px;
-    padding: 0 0 53px; 
-   
+    padding: 0 0 53px 0;
+    justify-content: flex-end;    
 }
 
-.green {
-    display: flex;
-    flex-direction: row-reverse;
+.green {    
+    display: flex;   
 }
 
 .foto {
     height: 482px;
     width: 680px;
     left: 625px;
-    top: 176px;   
+    top: 176px;
+}
 
-}.comleted {
+.comleted {
     font-family: 'Yeseva One';
     font-style: normal;
     font-weight: 400;
@@ -185,7 +230,6 @@ body * {
     color: #E3B873;
     margin: 0px;
     padding: 0 239px 34px 0;
-
 }
 
 .Only {
@@ -197,16 +241,13 @@ body * {
     color: #FFFFFF;
     margin: 0;
     padding: 0 50px 42px 0;
-
 }
 
 .red {    
     display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
-    height: 205px;
-    
-    
+    height: 210px;    
 }
 
 div.block {
@@ -222,8 +263,7 @@ h3.item {
     line-height: 25px;
     text-transform: uppercase;
     color: #E3B873;
-    margin: 0;
-	
+    margin: 0;	
 }
 
 span.text {
@@ -238,9 +278,11 @@ span.text {
 .arrows {
     width: 205px;
     height: 13px;
+        
 }
 
-
-    
-
-
+.pink {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;    
+}
