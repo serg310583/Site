@@ -19,9 +19,14 @@ body * {
     text-decoration: none;
 }
 
-.container, .navigationssecond {
+.container, .box_one, .page-one__container, .page-two__container, .page-three__container {
+    width: 100%;
     max-width: 1440px;
     margin: 0 auto;
+}
+
+.header {
+    background-color: black;    
 }
 
 .button {
@@ -68,9 +73,7 @@ body * {
     color: #E3B873;
 }
 
-.header {
-    background-color: black;    
-}
+
 
 .header-content {
     display: flex;
@@ -121,6 +124,7 @@ body * {
 }
 
 .box_one {
+    
     position: relative;    
     z-index: 3;    
 }
@@ -147,7 +151,7 @@ body * {
     width: 505px;   
 }
 
-.bottons {
+.group-bottons {
     display: flex;
     width: 434px;
     height: 51px;
@@ -162,7 +166,7 @@ body * {
     padding: 20px 29px 25px 29px;   
 }
 
-.hero_two {
+.page-one {
     background-size: cover;
     height: 1080px;
     position: relative;
@@ -183,28 +187,27 @@ body * {
     padding-right: 59px;       
 }
 
-.container_blue {
+.page-one__container {
     display: flex;
     flex-direction: column;    
 }
 
-.navigationssecond {
+.navigations_second {
     padding: 0 0 53px 0;    
     margin-left: 492px;    
 }
 
-.container_green {    
+.page-one__features {    
     display: flex;   
 }
 
-.foto {
-    height: 482px;
-    width: 680px;
-    left: 625px;
-    top: 176px;
+.page-one__features_title {
+    display: flex;
+    flex-direction: column;
+    max-width: 492px;    
 }
 
-.comleted {
+.title {
     font-family: 'Yeseva One';
     font-style: normal;
     font-weight: 400;
@@ -217,22 +220,13 @@ body * {
     padding: 0 239px 34px 0;
 }
 
-.Only {    
+.subtitle {    
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 27px;    
     margin: 0;
     padding: 0 50px 42px 0;
-}
-
-.container_red {
-    display: grid;
-    grid-template-columns: 1fr 1fr;    
-}
-
-.block {    
-    padding: 0 34px 34px 0;    
 }
 
 h3.item {
@@ -253,26 +247,37 @@ span.text {
     line-height: 21px;    
 }
 
-.arrows {
+.desc {
+    display: grid;
+    grid-template-columns: 1fr 1fr;    
+}
+
+.desc_block {    
+    padding: 0 34px 34px 0;    
+}
+
+.slider {
     padding-top: 48px;
     width: 205px;
     height: 13px;     
 }
 
-.container_pink {
-    display: flex;
-    flex-direction: column;
-    max-width: 492px;    
+.page-one__features_picture {
+    height: 482px;
+    width: 680px;
+    left: 625px;
+    top: 176px;
 }
 
-.hero_three {
+
+.page-two {
     display: flex;
     background-size: cover;
     height: 1072px;
     position: relative;    
 }
 
-.online {
+.page_heading {
     display: block;
     font-family: 'Yeseva One';
     font-style: normal;
@@ -285,32 +290,31 @@ span.text {
     
 }
 
-.camera {
+.page_icon {
     display: flex;
     align-items: center;
     padding:0 0 12px 664px;
 }
 
-.image_video {
+.page-two_image_video {
     display: flex;
     position: relative;
     padding:0 0 62px 309px;
     
 }
 
-.image_video img {    
+.page-two_image_video img {    
     filter: brightness(20%);
 }
-    
+
+.ellips img {
+    filter: none;
+}    
 
 .ellips {
     position: absolute;
     padding-top: 150px;
     padding-left: 325px;
-}
-
-.ellips img {
-    filter: none;
 }
 
 .hr-line {
@@ -348,6 +352,11 @@ span.text {
     line-height: 21px;
     color: rgba(54, 54, 54, 0.5);
 }
+.form-group {
+    
+}
+
+
 .form-group input {    
     border: none;
     background: transparent;
@@ -357,6 +366,7 @@ span.text {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
+    width: 231px;
     line-height: 23px;
     color: #363636;
 }
@@ -376,14 +386,15 @@ span.text {
     text-transform: uppercase;
 }
 
-.bt3:hover, .bt3:active {
+.bt3:hover, .bt3:active,
+.btn_sc:hover, btn_sc:active {
     background: none;
     border: 1px solid #000000;
     color: #000000;    
 }
 
 .form-row__check {
-    padding-left: 575px;
+    text-align: center;    
 }
 
 .form-row__check_text {
@@ -421,6 +432,292 @@ span.text {
     background-color: #E3B873;
     background-image: url(../Img/Vector.svg);
 }
+
+.ph3 {
+    color: #181818;
+}
+
+.page-three__services {
+    display: flex; 
+    justify-content: center;   
+}
+
+.service_card {
+    width: 100%;
+    max-width: 410px;
+    padding-top: 19px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+      
+}
+
+.service_card:nth-child(-n+2) {
+    margin-right: 30px;
+}
+
+.service_title {
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #363636;
+    margin: 23px auto 13px 34px;
+}
+.list_works ul {
+    padding-left: 0px;
+    margin-left: 34px;
+}
+    
+
+.list_works li {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 27px;
+    color: #959595;
+    
+}
+
+.list_works {
+    background-color: #fff;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+    width: 330px;
+    height: 295px;
+    margin-top: -127px;
+    margin-bottom: 152px;
+}
+
+.btn_sc {
+    width: 228px;
+    height: 54px;
+    padding: 0;
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    transition: 0.2;
+}
+
+.form-order {
+    display: flex;
+    /* max-width: 720px; */
+    width: 100%;
+    height: 645px;
+    /* margin-top: 152px; */
+}
+
+.work-order {
+    background-image: url(../img/fon.jpg);
+    max-width: 720px;
+    padding-top: 117px;
+    
+}
+
+.work01, .work02, .work03, .work04 {
+    display: flex;
+    margin-left: 200px;
+    margin-bottom: 35px;
+    /* margin-top: 117px; */
+}
+
+.imgblock {
+    position: relative;
+    display: inline-block;
+}
+
+.text-work {
+    color: #363636;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    padding-right: 80px;
+
+}
+
+.imgblock span {
+    color: #fff;   
+    position: absolute;
+    padding: 35px 35px;
+    right: 0;
+    bottom: 10px;
+    font-size: 18px;
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;    
+}
+
+.form-input {
+    max-width: 720px;
+    width: 100%;
+    height: 645px;
+    padding-left: 131px;
+    padding-top: 117px;
+    /* margin-top: 152px; */
+}
+
+.form-input__input {    
+    padding:0 50px;
+    background-color: #131313;
+    width: 506px;
+    height: 509px;
+}
+
+.form-input__lable {
+    margin: 0;
+    padding: 28px 90px 39px 90px;    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;    
+}
+
+
+.fg_input label {
+    color: rgba(255, 255, 255, 0.5)
+}
+
+.fg_input input {
+    color: #FFFFFF;
+    width: 408px;
+}
+
+.fg_input:nth-child(-n+3) {
+    padding-bottom: 48px;
+}
+
+.fr_input {
+    
+    position: relative;
+    text-align: left;
+    padding-top: 16px;    
+}
+
+.container_input {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+ 
+  .container_input .check-highload {
+    position: absolute;
+    opacity: 0;
+  }
+  
+  .highload2 {
+    
+    position: absolute;
+    top: 5px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+  }
+  
+  .container_input:hover .check-highload ~ .highload2 {
+    background-color: #ccc;
+  }
+  
+  .container_input .check-highload:checked ~ .highload2 {
+    background-color: #E3B873;
+  }
+  
+  .highload2:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  .container_input .check-highload:checked ~ .highload2:after {
+    display: block;
+  }
+  
+  .container_input .highload2:after {
+    left: 4px;
+    top: 1px;
+    width: 8px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 4px 4px 0;
+    transform: rotate(45deg);    
+  }
+
+  .text_checkbox {
+    font-size: 14px; 
+  }
+
+  .form-input__input_button {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .bt4 {
+    width: 213px;
+    height: 51px;
+    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;    
+  }
+
+  .bt4:hover, .bt4:active {
+    background: none;
+    border: 1px solid #FFFFFF;    
+}
+
+.page-three__discount {
+    display: flex;
+    justify-content: end;
+}
+
+.lable_pig {
+    display: flex;
+    
+}
+
+.ellips {
+    position: relative;
+}
+
+.pig {
+    position: absolute;
+    padding-left: 36px;
+    padding-top: 26px;
+}
+
+.discount {
+    width: 400px;
+    margin-right: 60px;
+}
+
+.text_discount {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color: #E3B873;
+    text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
+}
+
+
+
+
+
 
 
 
