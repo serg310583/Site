@@ -36,7 +36,7 @@ body * {
 
 /* header */
 
-.header, .footer {    
+.header, .footer {   
     background-color: black;    
 }
 
@@ -115,7 +115,10 @@ body * {
     color: white;    
 }
 
-.header-navigations__items a::after, .header-navigations__items a:hover {
+/* .header-navigations__items a:after,  */
+.header-navigations__items a:hover,
+.header-navigations__items a:visited
+{
     color: #E3B873;
 }
 
