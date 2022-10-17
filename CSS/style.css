@@ -566,7 +566,7 @@ span.text {
 }
 
 .work-order {
-    background-image: url(../img/page_three/background.jpg);  
+    background-image: url(../Img/page_three/background.jpg);  
     max-width: 720px;
     padding-top: 117px;    
 }
@@ -840,7 +840,7 @@ span.text {
 
 .page-five {
     height: 970px;
-    background-image: url(../img/page_five/background.jpg);
+    background-image: url(../Img/page_five/background.jpg);
     background-position: bottom;
     background-repeat: no-repeat;
     background-repeat: repeat-x;
@@ -919,7 +919,7 @@ span.text {
 .page-six {
     position: relative;
     height: 940px;
-    background-image: url(../img/page_six/background.jpg);
+    background-image: url(../Img/page_six/background.jpg);
     -webkit-background-size: cover;
     background-size: cover;    
 }
